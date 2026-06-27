@@ -8,16 +8,11 @@ import {
   Target,
   Globe2,
   Squircle,
-  Smartphone,
   MessageCircle,
   Headphones,
   MapPinned,
-  Monitor,
-  PhoneCall,
   Mail,
   Send,
-  Wrench,
-  Radio,
   Layers,
   ArrowUpRight,
 } from "lucide-react";
@@ -42,12 +37,6 @@ type Cliente = {
 type Produto = {
   name: string;
   tag: string;
-  description: string;
-};
-
-type Solucao = {
-  icon: React.ReactNode;
-  title: string;
   description: string;
 };
 
@@ -122,39 +111,6 @@ const ecossistema = [
     name: "KVIA",
     title: "Controle Operacional para Vias Urbanas",
     description: "Solução para operação de conservação urbana.",
-  },
-];
-
-const solucoes: Solucao[] = [
-  {
-    icon: <Monitor className="h-5 w-5" />,
-    title: "CCO",
-    description: "Soluções para Centro de Controle Operacional.",
-  },
-  {
-    icon: <PhoneCall className="h-5 w-5" />,
-    title: "0800 e Ouvidoria",
-    description: "Gestão de atendimento e demandas dos usuários.",
-  },
-  {
-    icon: <Wrench className="h-5 w-5" />,
-    title: "Conservação",
-    description: "Apoio à operação de conservação rodoviária e urbana.",
-  },
-  {
-    icon: <Smartphone className="h-5 w-5" />,
-    title: "Mobile",
-    description: "Recursos para operação em campo.",
-  },
-  {
-    icon: <Radio className="h-5 w-5" />,
-    title: "Integração ITS",
-    description: "Integração com equipamentos ITS.",
-  },
-  {
-    icon: <MessageCircle className="h-5 w-5" />,
-    title: "Mídias Sociais",
-    description: "Integração com mídias sociais no ecossistema operacional.",
   },
 ];
 
